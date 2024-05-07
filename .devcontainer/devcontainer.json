@@ -1,0 +1,22 @@
+{
+  "name": "docker-playweb - java",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "java",
+  "remoteUser": "vscode",
+  // コンテナ側のディレクトリを指定
+  "workspaceFolder": "/workspace",
+
+  // Configure tool-specific properties.
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      // コンテナ側のVScodeにインストールする拡張機能を指定
+      "extensions": [
+        "Oracle.oracle-java",
+        "vscjava.vscode-maven",
+        "vscjava.vscode-java-dependency",
+        "vscjava.vscode-java-test"
+      ]
+    }
+  }
+}
