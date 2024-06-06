@@ -4,5 +4,6 @@ services:
     build: .
     volumes:
       - ../workspace:/workspace
+      - ~/.ssh:/home/vscode/.ssh:ro
     tty: true
     stdin_open: true
